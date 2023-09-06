@@ -1,0 +1,125 @@
+body{
+    background-color: rgb(159, 165, 42);
+    text-align: center;
+}
+.main{
+    height: 500px;
+    width: 380px;
+    background-color: rgb(3, 95, 102);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    margin-top: 100px;
+}
+.screen{
+    width: 300px;
+    height: 100px;
+    background-color: beige;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 15px;
+    font-size: 30px;
+}
+.num{
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+.sym{
+    width: 70px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.l1{
+    width: 250px;
+    height: 70px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 30px;
+    font-size: 25px;
+}
+.l2{
+    width: 250px;
+    height: 70px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    margin-left: 30px;
+}
+.l3{
+    width: 250px;
+    height: 70px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    margin-left: 30px;
+}
+.l4{
+    width: 250px;
+    height: 70px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    margin-left: 30px;
+
+}
+.beq{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-color: darkslategrey;
+}
+.b0{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-color: darkgoldenrod;
+}
+.bac{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-color: aquamarine;
+}
+
+.btn{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-color: darkgoldenrod;
+}
+
+.bplu{
+    margin-top: 30px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: crimson;
+    font-size: 20px;
+}
+.bmin{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: crimson;
+    font-size: 20px;
+}
+.bmul{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: crimson;
+    font-size: 20px;
+}
+.bdiv{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: crimson;
+    font-size: 25px;
+}
