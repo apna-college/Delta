@@ -10,7 +10,7 @@ let mySound = new Audio('song3.mp3')
 mySound.play()
 //Mapping Colors By Creating Colors Object
 const colors = {
-  color1: {
+  color1: { 
     current: "#068e06",
     new: "#11e711",
   },
