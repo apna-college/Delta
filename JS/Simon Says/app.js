@@ -1,5 +1,6 @@
 let gameSeq = [];
 let userSeq = [];
+let highScore = [];
 
 let btns = ["yellow", "red", "purple", "green"];
 
@@ -50,7 +51,17 @@ function checkAns(idx) {
       setTimeout(levelUp, 1000);
     }
   } else {
-    h2.innerHTML = `Game Over! Your score was <b>${level}</b> <br> Press any key to start.`;
+   score = level - 1;
+    highScore.push(score);
+    let highValue = Math.max(...highScore);
+    // let highscoreDisplay = highScore.reduce((max, el) => {
+    //   if (max < el) {
+    //     return el;
+    //   } else {
+    //     return max;
+    //   }
+    // });
+    h2.innerHTML = `Game Over ! <br><b>Your score : ${score}</b><br><b>Highscore : ${highValue}</b><br>Press Any Key to Start`;
     document.querySelector("body").style.backgroundColor = "red";
     setTimeout(function () {
       document.querySelector("body").style.backgroundColor = "white";
