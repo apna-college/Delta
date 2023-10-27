@@ -87,5 +87,5 @@ function hiscore(level)
 {
   if(level>hs)
     hs=level;
-  h2.innerHTML = `Game Over! Your score was <b>${level}</b> <br> High-Score: <b>${hs}</b> <br> Press any key to start.`;
+  h2.innerHTML = `Game Over! Your score was <b>${level - 1}</b> <br> High-Score: <b>${hs-1}</b> <br> Press any key to start.`;
 } 
