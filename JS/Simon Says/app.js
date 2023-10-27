@@ -1,5 +1,6 @@
 let gameSeq = [];
 let userSeq = [];
+let hs = 0;
 
 let btns = ["yellow", "red", "purple", "green"];
 
@@ -50,11 +51,11 @@ function checkAns(idx) {
       setTimeout(levelUp, 1000);
     }
   } else {
-    h2.innerHTML = `Game Over! Your score was <b>${level}</b> <br> Press any key to start.`;
     document.querySelector("body").style.backgroundColor = "red";
     setTimeout(function () {
       document.querySelector("body").style.backgroundColor = "white";
     }, 150);
+    hiscore(level);
     reset();
   }
 }
@@ -80,3 +81,11 @@ function reset() {
   userSeq = [];
   level = 0;
 }
+
+
+function hiscore(level)
+{
+  if(level>hs)
+    hs=level;
+  h2.innerHTML = `Game Over! Your score was <b>${level}</b> <br> High-Score: <b>${hs}</b> <br> Press any key to start.`;
+} 
