@@ -1,5 +1,7 @@
 # News website
 
+# created by "Lokesh Shriwas"
+
 ## key features
 
 1. Search Bar: Find news on any topic effortlessly.
