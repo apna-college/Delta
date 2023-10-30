@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav-bar ">
+            <div class="main-nav container flex">
+                <div class="logo">
+                    <a href="#" onclick="reload()">
+                        <img src="logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <ul class="flex">
+                        <li class="hover-link nav-items" id="Finance" onclick="onNaItemClicked('Finance')" >Finance</li>
+                        <li class="hover-link nav-items" id="Politics" onclick="onNaItemClicked('Politics')">Politics</li>
+                        <li class="hover-link nav-items" id="Sports" onclick="onNaItemClicked('Sports')">Sports</li>
+                    </ul>
+                </div>
+                <div class="search-bar flex ">
+                    <input type="text" id="search-input" class="search-input" placeholder="E.g. Science">
+                    <button id="search-button" class="search-button">Search</button>
+                </div>
+                <i class="fa-solid fa-moon" id="icon"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card-container flex container" id="main-card-container">
+            
+        </div>
+
+        <template id="template-news-card">
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is the title</h3>
+                    <h6 class="news-source" id="news-source">End Gadget 11/07/2022</h6>
+                    <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus nesciunt rerum ullam incidunt dicta quibusdam blanditiis laborum esse veritatis fuga Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consequuntur distinctio sunt corrupti delectus ipsum consequatur sapiente. Ullam tempora ratione esse necessitatibus. Repellendus, obcaecati aliquam? Consequatur atque, sunt quos fuga rem nihil assumenda necessitatibus repellat dicta quaerat magni culpa? Illo earum eaque distinctio temporibus minima quo, doloribus quas sapiente dolorum!.</p>
+                </div>
+            </div>
+         </template>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
