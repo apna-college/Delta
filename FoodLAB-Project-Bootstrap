@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+      <div class="container-fluid">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-amd ms-4"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="m.334 0 4.358 4.359h7.15v7.15l4.358 4.358V0H.334ZM.2 9.72l4.487-4.488v6.281h6.28L6.48 16H.2V9.72Z"
+          />
+        </svg>
+        <a class="navbar-brand ms-2 me-5 fw-bolder" href="#">FoodLAB</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item ms-4 me-5">
+              <a
+                class="nav-link active fw-medium"
+                aria-current="page"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item ms-4 me-5">
+              <a class="nav-link active fw-medium" href="#about">About</a>
+            </li>
+            <li class="nav-item ms-4 me-5">
+              <a class="nav-link active fw-medium" href="#special"
+                >Special Offers</a
+              >
+            </li>
+            <li class="nav-item ms-4 me-5">
+              <a class="nav-link active fw-medium" href="#trending"
+                >Trending Items</a
+              >
+            </li>
+            <li class="nav-item ms-4 me-5">
+              <a class="nav-link active fw-medium" href="#menu">Menu</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-warning me-4" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-warning"
+      aria-label="Tenth navbar example"
+      id="home"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample08"
+          aria-controls="navbarsExample08"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-md-center"
+          id="navbarsExample08"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active me-5 ms-5" aria-current="page" href="#"
+                >Veg</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active me-5 ms-5" aria-current="page" href="#"
+                >Non-veg</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active me-5 ms-5" aria-current="page" href="#"
+                >Italian</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active me-5 ms-5" aria-current="page" href="#"
+                >Chinese</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active me-5 ms-5" aria-current="page" href="#"
+                >Indian</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="Images/Frame1.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Unveiling the Irresistible Magic of Biryani</h1>
+            <p>A flavorful, aromatic rice dish.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="Images/Frame2.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Crispy Chicken Temptations for the Ultimate Food Adventure</h1>
+            <p>
+              Indulge in a symphony of flavors with our tantalizing chicken
+              specialties!
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="Images/Frame3.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Discovering the Delights of Creamy Indian Cottage Cheese</h1>
+            <p>
+              Savor the rich textures and aromatic spices of our exquisite
+              paneer creations!
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container text-center" id="special">
+      <h1 class="mt-5">Our Special Offers</h1>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-5">
+        <div class="col">
+          <div class="card border-warning">
+            <img
+              src="Images/chiken.jpg"
+              class="card-img-top"
+              alt="Chicken Kabab"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Chicken Kabab</h5>
+              <p class="card-text">
+                Revel in the Charismatic Charm of Chicken Kebabs.
+              </p>
+              <a href="#" class="btn btn-outline-warning">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-warning">
+            <img
+              src="Images/butter.jpg"
+              class="card-img-top"
+              alt="Butter Chicken"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Butter Chicken Bliss</h5>
+              <p class="card-text">
+                Experience the heavenly amalgamation of succulent chicken.
+              </p>
+              <a href="#" class="btn btn-outline-warning">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-warning">
+            <img src="Images/gr.jpg" class="card-img-top" alt="Garlic Shrimp" />
+            <div class="card-body">
+              <h5 class="card-title">Garlic Shrimp Sensation</h5>
+              <p class="card-text">
+                The juicy shrimp, the piquant essence of fresh garlic and herbs.
+              </p>
+              <a href="#" class="btn btn-outline-warning">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-warning">
+            <img
+              src="Images/pis.jpg"
+              class="card-img-top"
+              alt="Pork Vindaloo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pork Vindaloo Fiesta</h5>
+              <p class="card-text">
+                Pork with a tangy and spicy marinade, burst of complex flavors.
+              </p>
+              <a href="#" class="btn btn-outline-warning">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="trending">
+      <h1 class="text-center mt-5">Trending Items</h1>
+      <div
+        class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-center mt-5"
+      >
+        <div class="col">
+          <div class="card border-warning">
+            <img
+              src="Images/Jamaican.jpg"
+              class="card-img-top"
+              alt="Jamaican Jerk Chicken"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Jamaican Jerk Chicken</h5>
+              <a href="#" class="btn btn-outline-warning">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-warning">
+            <img
+              src="Images/korean.jpg"
+              class="card-img-top"
+              alt="Korean BBQ Short Ribs"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Korean BBQ Short Ribs</h5>
+              <a href="#" class="btn btn-outline-warning">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-warning">
+            <img
+              src="Images/Chimichurri.jpg"
+              class="card-img-top"
+              alt="Chimichurri Grilled Chicken"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Chimichurri Grilled Chicken</h5>
+              <a href="#" class="btn btn-outline-warning">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-warning">
+            <img
+              src="Images/prawn.jpg"
+              class="card-img-top"
+              alt="Peri-Peri Grilled Prawns"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Peri-Peri Grilled Prawns</h5>
+              <a href="#" class="btn btn-outline-warning">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container bg-warning-subtle pt-1 mt-5 pb-3" id="menu">
+      <h1 class="text-center mt-5 text-warning">OUR MENU</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-lg-3 mt-5">
+            <div class="card border-light">
+              <div class="card-body">
+                <h5 class="card-title h6 pb-3 pt-4 text-warning">
+                  Filter by Dietary Preferences
+                </h5>
+                <div class="form-check pt-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault1"
+                  />
+                  <label class="form-check-label h6" for="flexCheckDefault1"
+                    >Vegan</label
+                  >
+                </div>
+                <div class="form-check pt-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault2"
+                  />
+                  <label class="form-check-label h6" for="flexCheckDefault2"
+                    >Vegetarian</label
+                  >
+                </div>
+                <div class="form-check pt-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault3"
+                  />
+                  <label class="form-check-label h6" for="flexCheckDefault3"
+                    >Gluten-free</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-8 col-lg-9 mt-5">
+            <h1 class="pt-5 pb-2 ms-1">Appetizers</h1>
+            <div class="row">
+              <div class="col">
+                <div class="col">
+                  <div class="p-2">
+                    <div class="card border-warning" style="width: 18rem">
+                      <img
+                        src="Images/1.jpeg"
+                        class="card-img-top"
+                        alt="Caprese Salad"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Caprese Salad</h5>
+                        <p class="card-text">
+                          Fresh tomatoes, mozzarella, basil, and balsamic glaze.
+                        </p>
+                        <a href="#" class="btn btn-warning">Price: $10</a>
+                        <a href="#" class="btn btn-warning mt-3"
+                          >Vegetarian, Gluten-free</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="col">
+                  <div class="p-2">
+                    <div class="card border-warning" style="width: 18rem">
+                      <img
+                        src="Images/2.jpeg"
+                        class="card-img-top"
+                        alt="Vegetable Spring Rolls"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Vegetable Spring Rolls</h5>
+                        <p class="card-text">
+                          Crispy spring rolls served with sweet chili sauce.
+                        </p>
+                        <a href="#" class="btn btn-warning">Price: $8</a>
+                        <a href="#" class="btn btn-warning mt-3"
+                          >Vegan, Gluten-free available</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h1 class="pt-5 pb-2 ms-1">Main Courses</h1>
+              <div class="row">
+                <div class="col">
+                  <div class="col">
+                    <div class="p-2">
+                      <div class="card border-warning" style="width: 18rem">
+                        <img
+                          src="Images/3.jpeg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Grilled Salmon</h5>
+                          <p class="card-text">
+                            Grilled salmon served with lemon butter sauce,
+                            asparagus, and roasted potatoes.
+                          </p>
+                          <a href="#" class="btn btn-warning">Price: $18</a>
+                          <a href="#" class="btn btn-warning ms-5"
+                            >Gluten-free</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="col">
+                    <div class="p-2">
+                      <div class="card border-warning" style="width: 18rem">
+                        <img
+                          src="Images/4.jpeg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Eggplant Parmesan</h5>
+                          <p class="card-text mb-3">
+                            Layers of breaded eggplant, marinara sauce, and
+                            mozzarella cheese.
+                          </p>
+                          <a href="#" class="btn btn-warning">Price: $14</a>
+                          <a href="#" class="btn btn-warning ms-5"
+                            >Vegetarian</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <h1 class="pt-5 pb-2 ms-1">Pasta</h1>
+                <div class="row">
+                  <div class="col">
+                    <div class="col">
+                      <div class="p-2">
+                        <div class="card border-warning" style="width: 18rem">
+                          <img
+                            src="Images/5.jpeg"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Spaghetti Carbonara</h5>
+                            <p class="card-text mb-4">
+                              Spaghetti with pancetta, eggs, Parmesan cheese,
+                              and black pepper.
+                            </p>
+                            <a href="#" class="btn btn-warning">Price: $15</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="col">
+                      <div class="p-2">
+                        <div class="card border-warning" style="width: 18rem">
+                          <img
+                            src="Images/6.jpeg"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Vegan Pesto Pasta</h5>
+                            <p class="card-text mb-5">
+                              Fresh basil and pine nut pesto with vegan
+                              parmesan.
+                            </p>
+                            <a href="#" class="btn btn-warning me-4"
+                              >Price: $14</a
+                            >
+                            <a href="#" class="btn btn-warning ms-5">Vegan</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h1 class="pt-5 pb-2 ms-1">Desserts</h1>
+                  <div class="row">
+                    <div class="col">
+                      <div class="col">
+                        <div class="p-2">
+                          <div class="card border-warning" style="width: 18rem">
+                            <img
+                              src="Images/7.jpeg"
+                              class="card-img-top"
+                              alt="..."
+                            />
+                            <div class="card-body">
+                              <h5 class="card-title">Chocolate Lava Cake</h5>
+                              <p class="card-text mb-4">
+                                Warm chocolate cake with a molten center, served
+                                with vanilla ice cream.
+                              </p>
+                              <a href="#" class="btn btn-warning me-2"
+                                >Price: $8</a
+                              >
+                              <a href="#" class="btn btn-warning ms-5"
+                                >Vegetarian</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="col">
+                        <div class="p-2">
+                          <div class="card border-warning" style="width: 18rem">
+                            <img
+                              src="Images/8.jpeg"
+                              class="card-img-top"
+                              alt="..."
+                            />
+                            <div class="card-body">
+                              <h5 class="card-title">Vegan Berry Crumble</h5>
+                              <p class="card-text mb-5">
+                                Mixed berries with an oat crumble, served with
+                                dairy-free ice cream.
+                              </p>
+                              <a href="#" class="btn btn-warning me-4"
+                                >Price: $7</a
+                              >
+                              <a href="#" class="btn btn-warning ms-5">Vegan</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h1 class="pt-5 pb-2 ms-1">Beverages</h1>
+                    <div class="row">
+                      <div class="col">
+                        <div class="col">
+                          <div class="p-2">
+                            <div
+                              class="card border-warning"
+                              style="width: 18rem"
+                            >
+                              <img
+                                src="Images/9.jpeg"
+                                class="card-img-top"
+                                alt="..."
+                              />
+                              <div class="card-body">
+                                <h5 class="card-title">Wine Selection</h5>
+                                <p class="card-text">
+                                  Explore our curated wine list to complement
+                                  your meal.
+                                </p>
+                                <a href="#" class="btn btn-warning">View</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="col">
+                          <div class="p-2">
+                            <div
+                              class="card border-warning"
+                              style="width: 18rem"
+                            >
+                              <img
+                                src="Images/10.jpeg"
+                                class="card-img-top"
+                                alt="..."
+                              />
+                              <div class="card-body">
+                                <h5 class="card-title">
+                                  Freshly Squeezed Juices
+                                </h5>
+                                <p class="card-text">
+                                  A variety of fruit and vegetable juices to
+                                  quench your thirst.
+                                </p>
+                                <a href="#" class="btn btn-warning">View</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container marketing">
+      <h1 class="text-center mt-5 mb-5">Testimonials</h1>
+      <div class="row mx-auto">
+        <div class="col-lg-4 text-center">
+          <svg
+            class="bd-placeholder-img rounded-circle"
+            width="140"
+            height="140"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <title>Placeholder</title>
+            <image href="Images/1test.png" width="100%" height="100%" />
+          </svg>
+          <h2 class="fw-normal">Michael Brown</h2>
+          <p>
+            "I celebrated a special occasion at FoodLAB. The elegant setting,
+            coupled with mouthwatering dishes, made it a night to remember a top
+            dining destination for a memorable gastronomic journey."
+          </p>
+        </div>
+
+        <div class="col-lg-4 text-center">
+          <svg
+            class="bd-placeholder-img rounded-circle"
+            width="140"
+            height="140"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <title>Placeholder</title>
+            <image href="Images/2test.png" width="100%" height="100%" />
+          </svg>
+          <h2 class="fw-normal">John Smith</h2>
+          <p>
+            "I had a delightful experience at FoodLAB. The exquisite food and
+            impeccable service, especially their signature dish, were a burst of
+            flavors that left me craving for more."
+          </p>
+        </div>
+
+        <div class="col-lg-4 text-center">
+          <svg
+            class="bd-placeholder-img rounded-circle"
+            width="140"
+            height="140"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <title>Placeholder</title>
+            <image href="Images/3test.png" width="100%" height="100%" />
+          </svg>
+          <h2 class="fw-normal">Emily Johnson</h2>
+          <p>
+            "I celebrated a special occasion at FoodLAB, and it was
+            unforgettable. The elegant setting and mouthwatering dishes make it
+            a top dining destination for a memorable experience."
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container bg-warning-subtle pt-3 mt-5 pb-3" id="about">
+      <h1 class="text-center mt-5 text-warning">Our Culinary Maestros</h1>
+      <p class="text-center ps-3 pe-3 pt-3 fw-normal h4 mb-5">
+        At <b>FoodLAB</b>, our team of talented chefs is dedicated to delivering
+        an exceptional dining experience, crafting culinary masterpieces that
+        tantalize the taste buds and ignite the senses. Meet the creative minds
+        behind our delectable creations:
+      </p>
+
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm border-light">
+              <svg
+                class="bd-placeholder-img card-img-top mt-3"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <image href="Images/1chef.jpg" width="100%" height="100%" />
+              </svg>
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Chef Michael Johnson</h5>
+                <p class="fw-medium text-warning">Specialty: French Cuisine</p>
+                <p class="card-text">
+                  With over 20 years of culinary experience, Chef Michael brings
+                  the elegance of French cuisine to our kitchen. Having trained
+                  under renowned chefs in Paris and Bordeaux, his passion for
+                  creating exquisite dishes using traditional French techniques
+                  has earned him accolades in the gastronomic world.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm border-light">
+              <svg
+                class="bd-placeholder-img card-img-top mt-3"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <image href="Images/8chef.jpg" width="100%" height="100%" />
+              </svg>
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Chef Sarah Nguyen</h5>
+                <p class="fw-medium text-warning">
+                  Specialty: Plant-Based Cuisine
+                </p>
+                <p class="card-text">
+                  Chef Sarah's passion for sustainable and plant-based cooking
+                  shines through her innovative creations. A focus on using
+                  locally sourced organic produce, she has crafted a vibrant
+                  selection of plant-based dishes that not only delight the
+                  taste buds but also promote a healthier way of dining.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm border-light">
+              <svg
+                class="bd-placeholder-img card-img-top mt-3"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <image href="Images/3chef.jpg" width="100%" height="100%" />
+              </svg>
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Chef William Lee</h5>
+                <p class="fw-medium text-warning">Specialty: Asian Fusion</p>
+                <p class="card-text">
+                  A master of Asian fusion cuisine, Chef William's culinary
+                  journey spans across the diverse flavors of China, Japan, and
+                  Thailand. With a keen eye for blending traditional Asian
+                  spices and contemporary cooking techniques, he has elevated
+                  our menu with his unique take on Asian-inspired dishes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Blog</a>
+          </li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
+      </footer>
+    </div>
+  </body>
+</html>
