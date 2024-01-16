@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&family=Saira:wght@500&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Montserrat:wght@300;400&family=Nunito&family=Raleway&family=Saira:wght@500&family=Young+Serif&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body,
+html {
+    background: black;
+    color: white;
+}
+
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+
+
+.navv-container {
+    margin: 10px 10px 0px 10px;
+    display: flex;
+    height: 40px;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+}
+
+.homee {
+    color: white;
+font-size: 20px;
+margin-right: 10px;
+cursor: pointer;
+}
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+.cer-title {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    margin: 40px 10px 0px 10px;
+}
+
+.cer-title div {
+    /* font-family: 'Saira', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+.cer-container {
+    /* border: 2px solid rgb(255, 0, 0); */
+    display: flex;
+    justify-content: center;
+    margin: 40px 10px 0px 10px;
+}
+
+.redirect {
+    position: absolute;
+    /* border: 2px solid red; */
+    opacity: 1;
+    z-index: 100;
+    transition: 0.2s;
+    font-size: 20px;
+    color: rgb(255, 187, 0);
+}
+
+.cer-container .flex:hover .redirect {
+    color: rgb(255, 255, 255);
+    transform: translate(4px, -4px);
+}
+
+.certificate-img {
+    height: 300px;
+    border-radius: 20px;
+    /* position: relative; */
+    border: 2px solid white;
+}
+
+@media (max-width: 400px) {
+    .certificate-img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 350px) {
+    .certificate-img {
+        height: 200px;
+    }
+}
+@media (max-width: 300px) {
+    .certificate-img {
+        height: 180px;
+    }
+}
+
+.cer-container .flex {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cer-container .flex::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    font-family: "Font Awesome 5 Free";
+    width: 100%;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.699);
+    z-index: 99;
+    transition: 0.4s;
+}
+
+.cer-container .flex:hover::after {
+    background-color: rgba(0, 0, 0, 0.651);
+}
+
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+.simple-learn {
+    color: rgb(0, 153, 255);
+    /* border: 2px solid darkmagenta; */
+    margin: 40px 10px 0px 10px;
+    font-size: 30px;
+}
+@media (max-width: 400px) {
+    .simple-learn{
+        font-size: 20px;
+    }
+}
+@media (max-width: 350px) {
+    .simple-learn{
+        font-size: 16px;
+    }
+}
+.simple-learn a {
+    text-decoration: none;
+    color: rgb(0, 153, 255);
+    transition: 0.4s;
+}
+
+.simple-learn a:hover {
+    text-decoration: none;
+    color: rgb(2, 118, 196);
+}
+
+.simple-learn span:nth-child(1) {
+    color: orange;
+    transition: 0.4s;
+}
+
+.simple-learn span:nth-child(1):hover {
+    color: rgb(189, 124, 3);
+}
+
+.simple-learn span:nth-child(2) {
+    color: rgb(255, 255, 255);
+    transition: 0.4s;
+}
+
+.simple-learn span:nth-child(2):hover {
+    color: rgb(155, 155, 155);
+}
+
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+
+.text-container {
+    margin: 40px 10px 20px 10px;
+}
+
+.fa-circle-dot {
+    margin: 0px 5px 0px 0px;
+    color: rgb(255, 255, 255);
+}
+
+.text{
+    color: darkgray;
+    text-align: left;
+    margin: 20px 10px 0px 20px;
+    /* font-family: 'Saira', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+@media (max-width:1000px) {
+    .text{
+        font-size: 14px;
+    }
+}
+@media (max-width:800px) {
+    .text{
+        font-size: 13px;
+    }
+}
+@media (max-width:600px) {
+    .text{
+        font-size: 11px;
+    }
+}
+@media (max-width:500px) {
+    .text{
+        font-size: 10px;
+    }
+}
+@media (max-width:400px) {
+    .text{
+        font-size: 8px;
+    }
+}
