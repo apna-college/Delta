@@ -5,78 +5,117 @@ let btns = ["yellow", "red", "purple", "green"];
 
 let started = false;
 let level = 0;
+//first step
+let currentScore = 0;
+let highScore = localStorage.getItem("highScore") || 0;
+
+// Display the initial high score
+document.getElementById("high-score").textContent = `High Score: ${highScore}`;
+
 
 let h2 = document.querySelector("h2");
-
 document.addEventListener("keypress", function () {
-  if (started == false) {
-    console.log("game is started");
-    started = true;
+    if (started == false) {
+        console.log("game is started");
+        started = true;
+        
 
-    levelUp();
-  }
+        levelUp();
+    }
 });
 
 function gameFlash(btn) {
-  btn.classList.add("flash");
-  setTimeout(function () {
-    btn.classList.remove("flash");
-  }, 250);
+    btn.classList.add("flash");
+    setTimeout(function () {
+        btn.classList.remove("flash");
+    }, 250);
+
 }
 
 function userFlash(btn) {
-  btn.classList.add("userflash");
-  setTimeout(function () {
-    btn.classList.remove("userflash");
-  }, 250);
+    btn.classList.add("userflash");
+    setTimeout(function () {
+        btn.classList.remove("userflash");
+    }, 250);
+
 }
-
 function levelUp() {
-  userSeq = [];
-  level++;
-  h2.innerText = `Level ${level}`;
+    userSeq = [];
+    level++;
+    nextSequence();
+    h2.innerText = `LEVEL ${level}`;
 
-  let randIdx = Math.floor(Math.random() * 3);
-  let randColor = btns[randIdx];
-  let randBtn = document.querySelector(`.${randColor}`);
-  gameSeq.push(randColor);
-  console.log(gameSeq);
-  gameFlash(randBtn);
+    let randIdx = Math.floor(Math.random() * 3);
+    let randColor = btns[randIdx];
+    let randBtn = document.querySelector(`.${randColor}`);
+    gameSeq.push(randColor);
+    console.log(gameSeq);
+
+    gameFlash(randBtn);
 }
 
 function checkAns(idx) {
-  if (userSeq[idx] === gameSeq[idx]) {
-    if (userSeq.length == gameSeq.length) {
-      setTimeout(levelUp, 1000);
+    if (userSeq[idx] == gameSeq[idx]) {
+        if (userSeq.length == gameSeq.length) {
+            setTimeout(levelUp, 1000);
+        }
     }
-  } else {
-    h2.innerHTML = `Game Over! Your score was <b>${level}</b> <br> Press any key to start.`;
-    document.querySelector("body").style.backgroundColor = "red";
-    setTimeout(function () {
-      document.querySelector("body").style.backgroundColor = "white";
-    }, 150);
-    reset();
-  }
+    else {
+        gameOver();
+        h2.innerHTML = `Game Over! score was <b>${level}</b> <br> press any key to start.`;
+        document.querySelector("body").style.backgroundColor = "red";
+        setTimeout(function () {
+            document.querySelector("body").style.backgroundColor = "white";
+        }, 150);
+
+        reset();
+    }
 }
 
 function btnPress() {
-  let btn = this;
-  userFlash(btn);
+    let btn = this;
+    userFlash(btn);
 
-  userColor = btn.getAttribute("id");
-  userSeq.push(userColor);
+    userColor = btn.getAttribute("id");
+    userSeq.push(userColor);
 
-  checkAns(userSeq.length - 1);
+    checkAns(userSeq.length - 1);
+
 }
-
 let allBtns = document.querySelectorAll(".btn");
 for (btn of allBtns) {
-  btn.addEventListener("click", btnPress);
+    btn.addEventListener("click", btnPress);
+
+
 }
 
+function nextSequence() {
+    currentScore++;
+  
+    if (currentScore > highScore) {
+      highScore = currentScore;
+      localStorage.setItem("highScore", highScore);
+    }
+  
+    // Update the displayed scores
+    document.getElementById("current-score").textContent = `Score: ${currentScore}`;
+    document.getElementById("high-score").textContent = `High Score: ${highScore}`;
+  
+    // Proceed with the next sequence logic...
+  }
+  function gameOver() {
+    alert("Game Over!");
+  
+    currentScore = 0;
+    document.getElementById("current-score").textContent = `Score: ${currentScore}`;
+  
+    // Additional game over logic...
+  }
+    
 function reset() {
-  started = false;
-  gameSeq = [];
-  userSeq = [];
-  level = 0;
+    started = false;
+    userSeq = [];
+    gameSeq = [];
+    level = 0;
+
 }
